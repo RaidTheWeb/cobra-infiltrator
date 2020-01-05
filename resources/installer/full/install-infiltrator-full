@@ -1,0 +1,35 @@
+#! /bin/bash
+
+clear
+logo="
+                                          `..-::////::-..`                                          
+                                     `.:+syhddddddddddddhys+:.`                                     
+                                  `-oyhddddhhyyssoossyyhhddddhy+-`                                  
+                                .+yddddhs+:.``        ``.:+shddddy+.                                
+                              .ohdddho-`                    `-ohdddho.                              
+                            `+hdddy:`            ``.-://///-`  `:ydddh+`                            
+                           .ydddy:`          `.:oyhddddysddds`   `:ydddy.                           
+                          :hdddo`          `/sdddddysooso++s:`     `odddh-                          
+                         -dddd/          `+hhhyyhhdh+.`.  .`         /dddd-                         
+                        `hddd/          :hy/+oo+ `-/sho.              /dddh`                        
+                        oddds          -dh.++/::`    `-+/              sdddo                        
+                       `dddd.          sds`osso+/-`      `             .dddd`                       
+                       /dddy           ydd/.+sss+/:-`                   yddd/                       
+                       oddd+           :ddds:`/osso/:--                 +ddd+                       
+                       oddd+            -hdddy+:`-+ss++/:               +dddo                       
+                       /ddds              /ydddddyo/:/o++/`             sddd/                       
+                       .dddd`               `:oydddddho:+/-            `dddd.                       
+                        yddd+                   `-+ydddd+:/            +ddds                        
+                        .dddd-                      -yddd+:           -dddd.                        
+                         /dddh-                      `hddd.          -hddd/                         
+                          /dddh/                      sddd:         /hddd/                          
+                           :hddds.                   `hddd-       .sdddh:                           
+                            .sdddho.                .ydddy      .ohddds.                            
+                             `:ydddhs/.`         `-ohdddy.   .:shdddy:`                             
+                               `:shdddhys+//://oshddddy/` -+shdddds:`                               
+                                  ./shddddddddddddhyo-` -sddddhy/.                                  
+                                     `.:/+osooo+:-.``./yddhyo:.`                                    
+                                                 `.:/+/:-.`          
+"
+
+echo $logo
