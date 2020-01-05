@@ -1,7 +1,36 @@
-#! /bin/bash
+#! /usr/bin/python
 
-clear
-logo="
+import os, sys, time
+
+white = '\033[97m'
+green = '\033[92m'
+red = '\033[91m'
+yellow = '\033[93m'
+end = '\033[0m'
+back = '\033[7;91m'
+info = '\033[93m[!]\033[0m'
+que = '\033[94m[?]\033[0m'
+bad = '\033[91m[-]\033[0m'
+good = '\033[32m[+]\033[0m'
+run = '\033[97m[~]\033[0m'
+
+def install():
+  t = time.process_time(logo)
+  print('%s[=] Installing...%s' % (green, end))
+  os.system('cd .. && git clone https://github.com/RaidTheWeb/Infiltrator-resources.git')
+  print('%s[=] Unpacking Resources...%s' % (green, end))
+  time.sleep(2.0)
+  print('%s[-] Killing Process...%s' % (red, end))
+  os.sytem('clear')
+  print(logo)
+  print('%s[=] Cobra Infiltrator VM For Termux Successfully Installed. %s' % (green, end))
+  print("""%s
+[+] ./start-infiltrator.sh : Boot Up Cobra Infiltrator VM %s
+""" % (green, end))
+
+
+os.system('clear')
+logo = """
                                           `..-::////::-..`                                          
                                      `.:+syhddddddddddddhys+:.`                                     
                                   `-oyhddddhhyyssoossyyhhddddhy+-`                                  
@@ -30,6 +59,14 @@ logo="
                                   ./shddddddddddddhyo-` -sddddhy/.                                  
                                      `.:/+osooo+:-.``./yddhyo:.`                                    
                                                  `.:/+/:-.`          
-"
+"""
 
-echo $logo
+print(logo)
+
+While True:
+  confirm = input('%s Confirm Installation (y/n) %s' % (que, end))
+  if confirm .lower().startswith('y'):
+    install()
+    break
+  elif confirm.lower().startswith('n'):
+    sys.exit('Installation Cancelled. ')
